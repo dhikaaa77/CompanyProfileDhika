@@ -1,32 +1,27 @@
 // ===============================
-// Mobile Menu (Hamburger)
+// Mobile Menu (Hamburger) - Revised
 // ===============================
 const btn = document.getElementById("menuBtn");
 const menu = document.getElementById("mobileMenu");
 const navLinksMobile = menu.querySelectorAll("a");
-const navbar = document.querySelector("nav");
-
 btn.addEventListener("click", () => {
-    if (menu.classList.contains("hidden")) {
-        // buka menu
-        menu.classList.remove("hidden");
+    btn.classList.toggle("hamburger-active");
 
+    if (btn.classList.contains("hamburger-active")) {
+        menu.classList.remove("hidden");
+        
         setTimeout(() => {
             menu.classList.remove("opacity-0", "-translate-y-4");
             animateMobileLinks(true);
         }, 10);
 
-        btn.classList.add("hamburger-active");
     } else {
-        // tutup menu
         menu.classList.add("opacity-0", "-translate-y-4");
         animateMobileLinks(false);
 
         setTimeout(() => {
             menu.classList.add("hidden");
         }, 300);
-
-        btn.classList.remove("hamburger-active");
     }
 });
 function animateMobileLinks(open) {
@@ -70,25 +65,21 @@ navLinksMobile.forEach(link => {
 // Navbar Scroll Effect
 // ===============================
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 40) {
+    if (window.scrollY > 10) {
+        navbar.classList.remove("bg-transparent");
         navbar.classList.add(
-            "shadow-lg",
-            "bg-white",
-            "dark:bg-gray-900"
-        );
-        navbar.classList.remove(
-            "bg-white/80",
-            "dark:bg-gray-900/80"
+            "bg-white/80", 
+            "dark:bg-gray-900/80",
+            "backdrop-blur-md", 
+            "shadow-md"
         );
     } else {
+        navbar.classList.add("bg-transparent");
         navbar.classList.remove(
-            "shadow-lg",
-            "bg-white",
-            "dark:bg-gray-900"
-        );
-        navbar.classList.add(
-            "bg-white/80",
-            "dark:bg-gray-900/80"
+            "bg-white/80", 
+            "dark:bg-gray-900/80",
+            "backdrop-blur-md", 
+            "shadow-md"
         );
     }
 });
@@ -128,7 +119,6 @@ window.addEventListener("scroll", activateMenu);
 const toggle = document.getElementById("darkToggle");
 const html = document.documentElement;
 
-// Load theme saat pertama kali
 if (localStorage.getItem("theme") === "dark") {
     html.classList.add("dark");
 }
@@ -148,13 +138,15 @@ toggle.addEventListener("click", () => {
 // ===============================
 const observerOptions = {
     threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
+    rootMargin: "0px" 
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("animate");
+        } else {
+            entry.target.classList.remove("animate");
         }
     });
 }, observerOptions);

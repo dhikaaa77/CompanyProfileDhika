@@ -1,0 +1,204 @@
+/* Animasi untuk website */
+
+/* Fade in dari bawah - Lebih Dramatis */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(80px) scale(0.9);
+    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-up.animate {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Fade in dari kiri - Lebih Dramatis */
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(-100px) scale(0.9);
+    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-left.animate {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+/* Fade in dari kanan - Lebih Dramatis */
+.fade-in-right {
+    opacity: 0;
+    transform: translateX(100px) scale(0.9);
+    transition: opacity 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in-right.animate {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+}
+
+/* Scale pada hover untuk cards */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Bounce animasi untuk button */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Pulse untuk highlight */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Delay untuk staggered animations */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+.delay-400 {
+    transition-delay: 0.4s;
+}
+
+.delay-500 {
+    transition-delay: 0.5s;
+}
+
+/* ===============================
+   Hamburger Animation
+================================ */
+
+.hamburger .line {
+  width: 24px;
+  height: 2px;
+  background-color: #1f2937; /* gray-800 */
+  transition: all 0.3s ease;
+}
+
+.dark .hamburger .line {
+  background-color: #f9fafb; /* gray-50 */
+}
+
+/* Active state */
+.hamburger-active .line-1 {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.hamburger-active .line-2 {
+  opacity: 0;
+}
+
+.hamburger-active .line-3 {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+#menuBtn.hamburger-active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+#menuBtn.hamburger-active span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuBtn.hamburger-active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* posisi default */
+#menuBtn span:nth-child(1) {
+    transform: translateY(-6px);
+}
+
+#menuBtn span:nth-child(3) {
+    transform: translateY(6px);
+}
+
+/* New Hamburger Menu with Checkbox */
+#menuToggle input[type="checkbox"]:checked ~ span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menuToggle input[type="checkbox"]:checked ~ span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuToggle input[type="checkbox"]:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+#menuToggle input[type="checkbox"]:checked ~ #menu {
+    transform: translateX(0);
+}
+
+/* Menu overlay for mobile */
+#menuToggle input[type="checkbox"]:checked ~ #menu::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Mobile Link Styles */
+.mobile-link {
+    color: #374151;
+    transition: color 0.3s ease;
+}
+
+.dark .mobile-link {
+    color: #d1d5db;
+}
+
+.mobile-link.active-nav {
+    color: #2563eb;
+    font-weight: 600;
+}
+

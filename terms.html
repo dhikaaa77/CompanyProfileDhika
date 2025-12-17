@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id" class="transition-colors duration-300">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='favGrad' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2360a5fa;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M15 85 C 15 85, 40 20, 85 15' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M30 85 C 30 85, 50 35, 85 30' stroke='%232563eb' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M45 85 C 45 85, 60 50, 85 45' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='85' cy='15' r='8' fill='%232563eb'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Terms of Service | Aurora Tech Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { darkMode: 'class' }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center">
+
+            <!-- LEFT: LOGO -->
+            <a href="#home" class="flex items-center space-x-2">
+                <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#2563eb" />
+                            <stop offset="100%" stop-color="#60a5fa" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M15 85 C 15 85, 40 20, 85 15" stroke="url(#logoGrad)" stroke-width="6"
+                        stroke-linecap="round" />
+                    <path d="M30 85 C 30 85, 50 35, 85 30" stroke="#2563eb" stroke-width="6" stroke-linecap="round" />
+                    <path d="M45 85 C 45 85, 60 50, 85 45" stroke="url(#logoGrad)" stroke-width="6"
+                        stroke-linecap="round" />
+                </svg>
+                <span class="font-bold text-xl text-blue-600 dark:text-blue-400">
+                    Aurora Tech
+                </span>
+            </a>
+
+            <!-- RIGHT: MENU + ACTION -->
+            <div class="ml-auto flex items-center space-x-6">
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 font-medium">
+                    <li><a href="index.html#home"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="home">Home</a></li>
+                    <li><a href="index.html#about"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="about">Tentang</a></li>
+                    <li><a href="index.html#services"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="services">Layanan</a></li>
+                    <li><a href="index.html#projects"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="projects">Proyek</a></li>
+                    <li><a href="index.html#contact"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="contact">Kontak</a></li>
+                </ul>
+
+                <!-- Dark Mode Toggle (Universal) -->
+                <button id="darkToggle" aria-label="Toggle Dark Mode" class="relative w-11 h-11 rounded-full
+                       bg-white dark:bg-gray-800
+                       flex items-center justify-center
+                       shadow-md transition-colors duration-300">
+
+                    <!-- Sun -->
+                    <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" class="absolute w-5 h-5 text-yellow-500
+                           transition-opacity duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364
+                           l-1.414 1.414M7.05 16.95
+                           l-1.414 1.414m0-11.314
+                           L7.05 7.05m9.9 9.9
+                           l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+
+                    <!-- Moon -->
+                    <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" class="absolute w-5 h-5 text-gray-200
+                           opacity-0 transition-opacity duration-300" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3
+                             7 7 0 0021 12.79z" />
+                    </svg>
+                </button>
+
+                <!-- Hamburger (Mobile Only) -->
+                <button id="menuBtn" class="md:hidden flex flex-col justify-between w-8 h-6 group z-[60]">
+
+                    <span class="h-0.5 w-full bg-gray-800 dark:bg-gray-100
+               transition-all duration-300
+               group-[.hamburger-active]:rotate-45
+               group-[.hamburger-active]:translate-y-[11px]">
+                    </span>
+
+                    <span class="h-0.5 w-full bg-gray-800 dark:bg-gray-100
+               transition-all duration-300
+               group-[.hamburger-active]:opacity-0">
+                    </span>
+
+                    <span class="h-0.5 w-full bg-gray-800 dark:bg-gray-100
+               transition-all duration-300
+               group-[.hamburger-active]:-rotate-45
+               group-[.hamburger-active]:-translate-y-[11px]">
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden
+           absolute top-full left-0 w-full
+           bg-white dark:bg-gray-800
+           border-t px-6 py-4 shadow-lg
+           z-40
+           opacity-0 transition-all duration-300 transform -translate-y-4">
+            <a href="index.html#home" class="block py-2 mobile-link">Home</a>
+            <a href="index.html#about" class="block py-2 mobile-link">Tentang</a>
+            <a href="index.html#services" class="block py-2 mobile-link">Layanan</a>
+            <a href="index.html#projects" class="block py-2 mobile-link">Proyek</a>
+            <a href="index.html#contact" class="block py-2 mobile-link">Kontak</a>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-24 px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-blue-600 mb-8 fade-in-left">Terms of Service</h1>
+
+            <div class="space-y-8 text-gray-600 dark:text-gray-300 leading-relaxed fade-in-up">
+                <section>
+                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        Penggunaan Layanan
+                    </h2>
+                    <p>
+                        Pengguna wajib menggunakan layanan sesuai hukum dan
+                        ketentuan yang berlaku.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        Hak Kekayaan Intelektual
+                    </h2>
+                    <p>
+                        Seluruh konten dan desain merupakan milik Aurora Tech Solutions.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        Batasan Tanggung Jawab
+                    </h2>
+                    <p>
+                        Aurora Tech Solutions tidak bertanggung jawab atas kerugian
+                        akibat penggunaan layanan.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
+                        Perubahan Ketentuan
+                    </h2>
+                    <p>
+                        Ketentuan dapat diubah sewaktu-waktu tanpa pemberitahuan.
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 mb-4">
+                    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 85 C 15 85, 40 20, 85 15" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M30 85 C 30 85, 50 35, 85 30" stroke="white" stroke-width="6" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M45 85 C 45 85, 60 50, 85 45" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"
+                            fill="none" />
+                        <circle cx="85" cy="15" r="5" fill="white" />
+                    </svg>
+                    <span class="font-bold text-xl text-white">Aurora Tech</span>
+                </div>
+                <p class="text-gray-400 pr-4">Mitra teknologi terpercaya untuk transformasi digital bisnis Anda.
+                    Inovasi, Kualitas, dan Keandalan.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-lg mb-4">Navigasi</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html#home" class="hover:text-white transition">Home</a></li>
+                    <li><a href="index.html#about" class="hover:text-white transition">Tentang</a></li>
+                    <li><a href="index.html#services" class="hover:text-white transition">Layanan</a></li>
+                    <li><a href="index.html#projects" class="hover:text-white transition">Proyek</a></li>
+                    <li><a href="index.html#contact" class="hover:text-white transition">Kontak</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-lg mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-6xl mx-auto px-6 pt-8 border-t border-gray-800 text-center md:text-left md:flex justify-between items-center">
+            <p class="text-sm">© 2025 Aurora Tech Solutions. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0 justify-center">
+                <a href="https://www.linkedin.com/feed/" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="https://www.instagram.com/accounts/login/" class="text-gray-400 hover:text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

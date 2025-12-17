@@ -191,12 +191,12 @@ function closeModalAndReset() {
 // Klik tombol Tutup
 closeModal.addEventListener("click", closeModalAndReset);
 
-// Klik area gelap (overlay)
-modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        closeModalAndReset();
-    }
-});
+// // Klik area gelap (overlay)
+// modal.addEventListener("click", (e) => {
+//     if (e.target === modal) {
+//         closeModalAndReset();
+//     }
+// });
 
 
 

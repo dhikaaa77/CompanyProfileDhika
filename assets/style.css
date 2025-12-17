@@ -62,3 +62,47 @@
     font-weight: 600;
 }
 
+ html {
+            scroll-behavior: smooth;
+        }
+
+        /* Sedikit penyesuaian agar gradasi di SVG bekerja sempurna di semua browser */
+        svg {
+            overflow: visible;
+        }
+
+        .nav-link {
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #2563eb;
+            border-radius: 999px;
+            transform: translateX(-50%);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link.active-nav::after {
+            width: 100%;
+        }
+
+
+        .dark #iconSun {
+            opacity: 0;
+        }
+
+        .dark #iconMoon {
+            opacity: 1;
+        }
+
+        .dark #toggleDot {
+            transform: translateY(-16px);
+            background-color: #9ca3af;
+        }

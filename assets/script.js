@@ -154,3 +154,50 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(
     ".fade-in-up, .fade-in-left, .fade-in-right"
 ).forEach(el => observer.observe(el));
+
+// ===============================
+// Contact Form Modal (FINAL FIX)
+// ===============================
+const form = document.getElementById("contactForm");
+const submitBtn = document.getElementById("submitBtn");
+const modal = document.getElementById("successModal");
+const closeModal = document.getElementById("closeModal");
+
+// Klik Kirim Pesan
+submitBtn.addEventListener("click", () => {
+    // tampilkan modal
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+});
+
+// Function RESET + GO HOME (dipakai di beberapa tempat)
+function closeModalAndReset() {
+    // tutup modal
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+
+    // reset form (PASTI)
+    form.reset();
+
+    // pindah ke home
+    window.location.hash = "#home";
+
+    // fallback biar smooth (jaga-jaga)
+    document.getElementById("home").scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+// Klik tombol Tutup
+closeModal.addEventListener("click", closeModalAndReset);
+
+// Klik area gelap (overlay)
+modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+        closeModalAndReset();
+    }
+});
+
+
+
+

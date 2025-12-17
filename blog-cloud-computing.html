@@ -2,25 +2,23 @@
 <html lang="id" class="transition-colors duration-300">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='favGrad' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2360a5fa;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M15 85 C 15 85, 40 20, 85 15' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M30 85 C 30 85, 50 35, 85 30' stroke='%232563eb' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M45 85 C 45 85, 60 50, 85 45' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='85' cy='15' r='8' fill='%232563eb'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="./assets/style.css">
-    <title>Privacy Policy | Aurora Tech Solutions</title>
+    <title>Cloud Computing untuk Bisnis | Aurora Tech</title>
+
+    <meta name="description"
+        content="Mengenal cloud computing dan manfaatnya bagi perusahaan modern dalam meningkatkan efisiensi, keamanan, dan skalabilitas sistem.">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { darkMode: 'class' }
     </script>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 
-<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
 
     <!-- Navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
@@ -64,9 +62,12 @@
                     <li><a href="index.html#projects"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="projects">Proyek</a></li>
-                    <li><a href="#contact"
+                    <li><a href="index.html#contact"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="contact">Kontak</a></li>
+                    <li><a href="blog.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="contact">Blog</a></li>
                 </ul>
 
                 <!-- Dark Mode Toggle (Universal) -->
@@ -128,55 +129,100 @@
             <a href="index.html#services" class="block py-2 mobile-link">Layanan</a>
             <a href="index.html#projects" class="block py-2 mobile-link">Proyek</a>
             <a href="index.html#contact" class="block py-2 mobile-link">Kontak</a>
+            <a href="blog.html" class="block py-2 mobile-link">Blog</a>
         </div>
     </nav>
 
 
     <main class="pt-32 pb-24 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h1 class="text-4xl font-bold text-blue-600 mb-8 fade-in-left">Privacy Policy</h1>
+        <div class="max-w-3xl mx-auto">
 
-            <div class="space-y-8 text-gray-600 dark:text-gray-300 leading-relaxed fade-in-up">
-                <section>
-                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                        Informasi yang Kami Kumpulkan
-                    </h2>
-                    <p>
-                        Aurora Tech Solutions mengumpulkan informasi pribadi seperti nama,
-                        email, dan data lain yang dikirimkan melalui formulir kontak.
-                    </p>
-                </section>
+            <a href="blog.html" class="inline-block mb-6 text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium">
+                ← Kembali ke Blog
+            </a>
 
-                <section>
-                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                        Penggunaan Informasi
-                    </h2>
-                    <p>
-                        Informasi digunakan untuk komunikasi, peningkatan layanan,
-                        dan keperluan bisnis yang sah.
-                    </p>
-                </section>
+            <h1 class="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-8 fade-in-up leading-tight">
+                Cloud Computing: Fondasi Utama Pertumbuhan Bisnis di Era Digital
+            </h1>
 
-                <section>
-                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                        Keamanan Data
-                    </h2>
-                    <p>
-                        Kami berkomitmen menjaga keamanan data pengguna dengan
-                        langkah teknis dan operasional yang wajar.
-                    </p>
-                </section>
+            <div class="prose prose-lg dark:prose-invert">
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 fade-in-up text-lg">
+                    Bayangkan jika bisnis Anda tidak lagi perlu mengkhawatirkan biaya perawatan server fisik yang mahal
+                    atau risiko kehilangan data akibat kerusakan perangkat keras. Itulah kekuatan dari <strong>Cloud
+                        Computing</strong>. Secara sederhana, cloud computing adalah pengiriman layanan
+                    komputasi—termasuk server, penyimpanan, database, jaringan, dan perangkat lunak—melalui internet.
+                </p>
 
-                <section>
-                    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                        Perubahan Kebijakan
+                <h2 class="text-2xl font-bold mt-10 mb-4 fade-in-up text-gray-800 dark:text-gray-100">
+                    Keuntungan Strategis Mengadopsi Teknologi Cloud
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 fade-in-up">
+                    Bukan sekadar tren teknologi, migrasi ke cloud memberikan dampak nyata pada efisiensi biaya dan
+                    kecepatan operasional perusahaan:
+                </p>
+
+                <ul class="list-disc pl-6 space-y-4 text-gray-600 dark:text-gray-300 mb-8 fade-in-up">
+                    <li>
+                        <strong>Skalabilitas Tanpa Batas:</strong> Anda bisa menambah kapasitas penyimpanan atau
+                        kekuatan server hanya dengan beberapa klik saat trafik bisnis melonjak, tanpa perlu membeli
+                        hardware baru.
+                    </li>
+                    <li>
+                        <strong>Efisiensi Biaya (Pay-as-you-go):</strong> Anda hanya membayar apa yang Anda gunakan.
+                        Tidak ada lagi biaya listrik server yang menyala 24 jam atau gaji tim teknis khusus untuk
+                        perawatan fisik.
+                    </li>
+                    <li>
+                        <strong>Keamanan & Pemulihan Bencana:</strong> Penyedia cloud kelas dunia memiliki standar
+                        keamanan yang jauh lebih ketat daripada server kantor biasa, lengkap dengan backup otomatis di
+                        berbagai lokasi geografis.
+                    </li>
+                    <li>
+                        <strong>Aksesibilitas Global:</strong> Tim Anda bisa bekerja dari mana saja dan kapan saja,
+                        memastikan kolaborasi tetap berjalan meski dalam sistem kerja remote.
+                    </li>
+                </ul>
+
+                <h2 class="text-2xl font-bold mt-10 mb-4 fade-in-up text-gray-800 dark:text-gray-100">
+                    Memahami Model Layanan Cloud (SaaS, PaaS, IaaS)
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 fade-in-up">
+                    Sebelum memulai migrasi, penting untuk memahami solusi mana yang paling tepat untuk bisnis Anda:
+                </p>
+                <div class="grid md:grid-cols-3 gap-4 mb-8 fade-in-up">
+                    <div class="p-4 border rounded-lg dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
+                        <span class="font-bold text-blue-600 dark:text-blue-400">SaaS</span>
+                        <p class="text-xs mt-1">Software as a Service. Contoh: Google Workspace atau CRM Online.</p>
+                    </div>
+                    <div class="p-4 border rounded-lg dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
+                        <span class="font-bold text-blue-600 dark:text-blue-400">PaaS</span>
+                        <p class="text-xs mt-1">Platform as a Service. Cocok untuk pengembang yang ingin membuat
+                            aplikasi.</p>
+                    </div>
+                    <div class="p-4 border rounded-lg dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
+                        <span class="font-bold text-blue-600 dark:text-blue-400">IaaS</span>
+                        <p class="text-xs mt-1">Infrastructure as a Service. Kontrol penuh atas server virtual dan
+                            jaringan.</p>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-12 p-8 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 text-white shadow-xl fade-in-up">
+                    <h2 class="text-2xl font-bold mb-3">
+                        Transformasi Cloud Bersama Aurora Tech
                     </h2>
-                    <p>
-                        Kebijakan ini dapat diperbarui sewaktu-waktu dan akan
-                        ditampilkan di halaman ini.
+                    <p class="text-blue-50 mb-6">
+                        Kami memahami bahwa proses migrasi data bisa terlihat rumit. Aurora Tech Solutions hadir untuk
+                        menyederhanakan proses tersebut. Mulai dari konsultasi arsitektur, pemilihan provider (AWS,
+                        Azure, atau Google Cloud), hingga manajemen keamanan pasca-migrasi.
                     </p>
-                </section>
+                    <a href="index.html#contact"
+                        class="inline-block bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-50 transition shadow-lg">
+                        Mulai Konsultasi Cloud Gratis
+                    </a>
+                </div>
             </div>
+
         </div>
     </main>
 
@@ -203,12 +249,11 @@
             <div>
                 <h4 class="text-white font-semibold text-lg mb-4">Navigasi</h4>
                 <ul class="space-y-2">
-                    <li><a href="index.html#home" class="hover:text-white transition">Home</a></li>
-                    <li><a href="about.html" class="hover:text-white transition">Tentang</a></li>
-                    <li><a href="index.html#services" class="hover:text-white transition">Layanan</a></li>
-                    <li><a href="index.html#projects" class="hover:text-white transition">Proyek</a></li>
-                    <li><a href="index.html#contact" class="hover:text-white transition">Kontak</a></li>
                     <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+                    <li><a href="blog-transformasi-digital.html" class="hover:text-white transition">Transformasi
+                            Digital</a></li>
+                    <li><a href="blog-cloud-computing.html" class="hover:text-white transition">Cloud Computing</a></li>
+                    <li><a href="blog-aplikasi-custom.html" class="hover:text-white transition">Aplikasi Custom</a></li>
                 </ul>
             </div>
 

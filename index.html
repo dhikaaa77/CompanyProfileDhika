@@ -18,53 +18,6 @@
             darkMode: 'class'
         }
     </script>
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Sedikit penyesuaian agar gradasi di SVG bekerja sempurna di semua browser */
-        svg {
-            overflow: visible;
-        }
-
-        .nav-link {
-            position: relative;
-            padding-bottom: 4px;
-        }
-
-        .nav-link::after {
-            content: "";
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-            width: 0%;
-            height: 2px;
-            background-color: #2563eb;
-            border-radius: 999px;
-            transform: translateX(-50%);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link.active-nav::after {
-            width: 100%;
-        }
-
-
-        .dark #iconSun {
-            opacity: 0;
-        }
-
-        .dark #iconMoon {
-            opacity: 1;
-        }
-
-        .dark #toggleDot {
-            transform: translateY(-16px);
-            background-color: #9ca3af;
-        }
-    </style>
 </head>
 
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
@@ -99,11 +52,24 @@
 
                 <!-- Desktop Menu -->
                 <ul class="hidden md:flex space-x-8 font-medium">
-                    <li><a href="#home" class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300" data-section="home">Home</a></li>
-                    <li><a href="#about" class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300" data-section="about">Tentang</a></li>
-                    <li><a href="#services" class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300" data-section="services">Layanan</a></li>
-                    <li><a href="#projects" class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300" data-section="projects">Proyek</a></li>
-                    <li><a href="#contact" class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300" data-section="contact">Kontak</a></li>
+                    <li><a href="#home"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="home">Home</a></li>
+                    <li><a href="#about"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="about">Tentang</a></li>
+                    <li><a href="#services"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="services">Layanan</a></li>
+                    <li><a href="#projects"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="projects">Proyek</a></li>
+                    <li><a href="#contact"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="contact">Kontak</a></li>
+                    <li><a href="blog.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300">Blog</a>
+                    </li>
                 </ul>
 
                 <!-- Dark Mode Toggle (Universal) -->
@@ -154,8 +120,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobileMenu"
-     class="hidden md:hidden
+        <div id="mobileMenu" class="hidden md:hidden
            absolute top-full left-0 w-full
            bg-white dark:bg-gray-800
            border-t px-6 py-4 shadow-lg
@@ -166,86 +131,94 @@
             <a href="#services" class="block py-2 mobile-link">Layanan</a>
             <a href="#projects" class="block py-2 mobile-link">Proyek</a>
             <a href="#contact" class="block py-2 mobile-link">Kontak</a>
+            <a href="blog.html" class="block py-2 mobile-link">Blog</a>
         </div>
     </nav>
 
 
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center px-6">
-    <div class="absolute inset-0 -z-10 bg-gradient-to-br
+        <div class="absolute inset-0 -z-10 bg-gradient-to-br
 from-blue-50 to-purple-50
 dark:from-gray-900 dark:to-gray-800">
-    </div>
+        </div>
 
-    <div class="max-w-4xl text-center">
-        <div class="relative z-10 max-w-4xl text-center fade-in-up py-16">
-            <h1 class="text-4xl md:text-6xl font-extrabold text-blue-600 dark:text-blue-400 leading-tight">
-                Transforming Businesses Through Technology
-            </h1>
-            <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm">
-                Solusi digital yang membantu bisnis Anda berkembang lebih cepat dan lebih efisien.
-            </p>
+        <div class="max-w-4xl text-center">
+            <div class="relative z-10 max-w-4xl text-center fade-in-up py-16">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-blue-600 dark:text-blue-400 leading-tight">
+                    Mendorong Transformasi Bisnis Melalui Teknologi
+                </h1>
+                <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm">
+                    Kami menyediakan solusi teknologi untuk mendukung pertumbuhan dan efisiensi operasional bisnis Anda.
+                </p>
 
-            <div class="mt-8 space-y-3 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center">
-                <a href="#services"
-                    class="bg-blue-600 text-white px-8 py-3 rounded-lg text-center font-medium hover:bg-blue-700 transition shadow-md hover:shadow-lg bounce">
-                    Pelajari Layanan
-                </a>
-                <a href="#contact"
-                    class="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg text-center font-medium hover:bg-blue-50 transition">
-                    Konsultasi Gratis
-                </a>
+                <div class="mt-8 space-y-3 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center">
+                    <a href="#services"
+                        class="bg-blue-600 text-white px-8 py-3 rounded-lg text-center font-medium hover:bg-blue-700 transition shadow-md hover:shadow-lg bounce">
+                        Pelajari Layanan
+                    </a>
+                    <a href="#contact"
+                        class="border-2 border-blue-600 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg text-center font-medium hover:bg-blue-50 transition">
+                        Konsultasi Gratis
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- about section -->
     <section id="about" class="py-24 bg-gray-50 dark:bg-gray-800 px-6 scroll-mt-16">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
             <div class="fade-in-left">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">Tentang Kami</h2>
-                <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm">
+                <p class="text-gray-600 dark:text-gray-300 mt-4 text-base leading-relaxed">
                     Aurora Tech Solutions menyediakan layanan pengembangan aplikasi dan integrasi sistem untuk
                     perusahaan yang ingin meningkatkan efisiensi dan produktivitas. Kami mengutamakan solusi yang
                     relevan, fungsional, dan sesuai dengan kebutuhan bisnis Anda.
                 </p>
 
-                <div class="grid grid-cols-3 mt-10 text-center gap-6">
-                    <div class="p-4 bg-white/90 dark:bg-gray-800
-            border border-gray-200 dark:border-gray-700
-            rounded-lg shadow-sm
-            hover:shadow-xl hover:-translate-y-1
-            transition-all duration-300 cursor-default hover-scale">
-                        <h3 class="text-3xl font-bold text-blue-600 dark:text-blue-400">30+</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm">Klien Puas</p>
+                <div class="grid grid-cols-3 mt-10 text-center gap-4">
+
+                    <div class="group p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm 
+                            hover:shadow-blue-500/20 hover:border-blue-500 dark:hover:bg-gray-700 dark:hover:border-blue-400 
+                            transition-all duration-300 transform hover:-translate-y-2 cursor-default">
+                        <h3
+                            class="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                            30+</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mt-1 text-xs font-medium">Klien Puas</p>
                     </div>
 
-                    <div class="p-4 bg-white/90 dark:bg-gray-800
-            border border-gray-200 dark:border-gray-700
-            rounded-lg shadow-sm
-            hover:shadow-xl hover:-translate-y-1
-            transition-all duration-300 cursor-default hover-scale">
-                        <h3 class="text-3xl font-bold text-blue-600 dark:text-blue-400">5+</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm">Tahun Pengalaman</p>
+                    <div class="group p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm 
+                            hover:shadow-blue-500/20 hover:border-blue-500 dark:hover:bg-gray-700 dark:hover:border-blue-400 
+                            transition-all duration-300 transform hover:-translate-y-2 cursor-default">
+                        <h3
+                            class="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                            5+</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mt-1 text-xs font-medium">Tahun Pengalaman</p>
                     </div>
 
-                    <div class="p-4 bg-white/90 dark:bg-gray-800
-            border border-gray-200 dark:border-gray-700
-            rounded-lg shadow-sm
-            hover:shadow-xl hover:-translate-y-1
-            transition-all duration-300 cursor-default hover-scale">
-                        <h3 class="text-3xl font-bold text-blue-600 dark:text-blue-400">100%</h3>
-                        <p class="text-gray-600 dark:text-gray-300 mt-2 text-sm">Proyek Selesai Tepat Waktu</p>
+                    <div class="group p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-sm 
+                            hover:shadow-blue-500/20 hover:border-blue-500 dark:hover:bg-gray-700 dark:hover:border-blue-400 
+                            transition-all duration-300 transform hover:-translate-y-2 cursor-default">
+                        <h3
+                            class="text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                            100%</h3>
+                        <p class="text-gray-500 dark:text-gray-400 mt-1 text-xs font-medium">Tepat Waktu</p>
                     </div>
                 </div>
 
+                <div class="mt-12">
+                    <a href="about.html"
+                        class="inline-block border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-blue-200 dark:hover:shadow-none">
+                        Selengkapnya Tentang Kami
+                    </a>
+                </div>
             </div>
 
             <div class="relative fade-in-right">
-                <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full -z-10"></div>
-                <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-50 rounded-full -z-10"></div>
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 dark:bg-blue-900/30 rounded-full -z-10"></div>
+                <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-blue-50 dark:bg-blue-900/20 rounded-full -z-10">
+                </div>
 
                 <img src="https://images.unsplash.com/photo-1525182008055-f88b95ff7980?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     class="rounded-2xl shadow-2xl w-full object-cover h-[400px]"
@@ -459,32 +432,39 @@ dark:from-gray-900 dark:to-gray-800">
                     </div>
                 </div>
 
-                <form
-                    class="bg-white/95 dark:bg-gray-800/95 border border-gray-200 dark:border-gray-700 p-8 rounded-2xl shadow-xl backdrop-blur">
+                <form id="contactForm"
+      class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-100 dark:border-gray-700">
+
+
+
                     <div class="mb-6">
-                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Nama
-                            Lengkap</label>
-                        <input type="text" id="name" placeholder="Masukkan nama lengkap Anda" class="w-full border-gray-300 focus:border-blue-600 focus:ring-blue-600 rounded-lg shadow-sm p-3 border
-                   transition-all duration-300 hover:border-blue-400 hover:bg-blue-50/30">
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                            Nama Lengkap
+                        </label>
+                        <input type="text" id="name" placeholder="Masukkan nama lengkap Anda"
+                            class="w-full border-gray-300 text-gray-900 focus:border-blue-600 focus:ring-blue-600 rounded-lg shadow-sm p-3 border transition-all duration-300 hover:border-blue-400 hover:bg-blue-50/30">
                     </div>
 
                     <div class="mb-6">
-                        <label for="email"
-                            class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Alamat Email</label>
-                        <input type="email" id="email" placeholder="nama@email.com" class="w-full border-gray-300 focus:border-blue-600 focus:ring-blue-600 rounded-lg shadow-sm p-3 border 
-                   transition-all duration-300 hover:border-blue-400 hover:bg-blue-50/30">
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                            Alamat Email
+                        </label>
+                        <input type="email" id="email" placeholder="nama@email.com"
+                            class="w-full border-gray-300 text-gray-900 focus:border-blue-600 focus:ring-blue-600 rounded-lg shadow-sm p-3 border transition-all duration-300 hover:border-blue-400 hover:bg-blue-50/30">
                     </div>
 
                     <div class="mb-6">
-                        <label for="message"
-                            class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Pesan / Kebutuhan
-                            Proyek</label>
-                        <textarea id="message" rows="5" placeholder="Ceritakan sedikit tentang kebutuhan Anda..." class="w-full border-gray-300 focus:border-blue-600 focus:ring-blue-600 rounded-lg shadow-sm p-3 border resize-none
-                   transition-all duration-300 hover:border-blue-400 hover:bg-blue-50/30"></textarea>
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                            Pesan / Kebutuhan Proyek
+                        </label>
+                        <textarea id="message" rows="5" placeholder="Ceritakan sedikit tentang kebutuhan Anda..."
+                            class="w-full border-gray-300 text-gray-900 focus:border-blue-600 focus:ring-blue-600 rounded-lg shadow-sm p-3 border resize-none transition-all duration-300 hover:border-blue-400 hover:bg-blue-50/30"></textarea>
                     </div>
 
-                    <button type="submit"
-                        class="w-full bg-blue-600 text-white px-6 py-4 rounded-lg font-medium hover:bg-blue-700 transition shadow-md hover:shadow-lg flex items-center justify-center">
+                    <button type="submit" id="submitBtn" class="w-full bg-blue-600 text-white px-6 py-4 rounded-lg font-medium
+         hover:bg-blue-700 transition shadow-md hover:shadow-lg
+         flex items-center justify-center">
+
                         Kirim Pesan
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-5 h-5 ml-2">
@@ -521,10 +501,11 @@ dark:from-gray-900 dark:to-gray-800">
                 <h4 class="text-white font-semibold text-lg mb-4">Navigasi</h4>
                 <ul class="space-y-2">
                     <li><a href="#home" class="hover:text-white transition">Home</a></li>
-                    <li><a href="#about" class="hover:text-white transition">Tentang</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">Tentang</a></li>
                     <li><a href="#services" class="hover:text-white transition">Layanan</a></li>
                     <li><a href="#projects" class="hover:text-white transition">Proyek</a></li>
                     <li><a href="#contact" class="hover:text-white transition">Kontak</a></li>
+                    <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
                 </ul>
             </div>
 
@@ -546,7 +527,39 @@ dark:from-gray-900 dark:to-gray-800">
         </div>
     </footer>
 
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 hidden items-center justify-center
+         bg-black/50 backdrop-blur-sm z-[9999]">
+
+        <div class="bg-white dark:bg-gray-800
+           rounded-2xl p-8 max-w-sm w-full
+           text-center shadow-xl
+           transform scale-95 transition-all duration-300">
+
+            <div class="w-16 h-16 mx-auto mb-4
+             bg-blue-100 text-blue-600
+             rounded-full flex items-center justify-center">
+                ✓
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+                Pesan Terkirim
+            </h3>
+
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">
+                Terima kasih, tim kami akan menghubungi Anda secepatnya.
+            </p>
+
+            <button id="closeModal" class="w-full bg-blue-600 text-white py-3 rounded-lg
+             hover:bg-blue-700 transition">
+                Tutup
+            </button>
+
+        </div>
+    </div>
     <script src="./assets/script.js"></script>
+    
+
 
 </body>
 

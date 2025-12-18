@@ -25,15 +25,14 @@
     </style>
 </head>
 
-<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
 
-    <!-- Navbar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
 
         <div class="max-w-6xl mx-auto px-6 py-4 flex items-center">
 
             <!-- LEFT: LOGO -->
-            <a href="#home" class="flex items-center space-x-2">
+            <a href="index.html" class="flex items-center space-x-2">
                 <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
@@ -57,24 +56,24 @@
 
                 <!-- Desktop Menu -->
                 <ul class="hidden md:flex space-x-8 font-medium">
-                    <li><a href="index.html#home"
+                    <li><a href="index.html"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="home">Home</a></li>
-                    <li><a href="index.html#about"
+                    <li><a href="about.html"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="about">Tentang</a></li>
-                    <li><a href="index.html#services"
+                    <li><a href="services.html"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="services">Layanan</a></li>
-                    <li><a href="index.html#projects"
+                    <li><a href="projects.html"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="projects">Proyek</a></li>
-                    <li><a href="index.html#contact"
+                    <li><a href="contact.html"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="contact">Kontak</a></li>
                     <li><a href="blog.html"
-                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
-                            data-section="contact">Blog</a></li>
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300">Blog</a>
+                    </li>
                 </ul>
 
                 <!-- Dark Mode Toggle (Universal) -->
@@ -131,11 +130,11 @@
            border-t px-6 py-4 shadow-lg
            z-40
            opacity-0 transition-all duration-300 transform -translate-y-4">
-            <a href="index.html#home" class="block py-2 mobile-link">Home</a>
-            <a href="index.html#about" class="block py-2 mobile-link">Tentang</a>
-            <a href="index.html#services" class="block py-2 mobile-link">Layanan</a>
-            <a href="index.html#projects" class="block py-2 mobile-link">Proyek</a>
-            <a href="index.html#contact" class="block py-2 mobile-link">Kontak</a>
+            <a href="index.html" class="block py-2 mobile-link">Home</a>
+            <a href="about.html" class="block py-2 mobile-link">Tentang</a>
+            <a href="services.html" class="block py-2 mobile-link">Layanan</a>
+            <a href="projects.html" class="block py-2 mobile-link">Proyek</a>
+            <a href="contact.html" class="block py-2 mobile-link">Kontak</a>
             <a href="blog.html" class="block py-2 mobile-link">Blog</a>
         </div>
     </nav>
@@ -181,26 +180,60 @@
 
     <!-- ================= VISION & MISSION ================= -->
     <section class="py-20 bg-gray-50 dark:bg-gray-800 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
 
-            <div class="fade-in-up">
-                <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">Visi Kami</h3>
-                <p class="text-gray-600 dark:text-gray-300">
-                    Menjadi mitra teknologi terpercaya yang mendorong transformasi digital berkelanjutan bagi
-                    perusahaan di berbagai industri.
-                </p>
+                <div class="relative group p-1 rounded-3xl bg-gradient-to-br from-blue-500 to-blue-700 shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="bg-white dark:bg-gray-900 rounded-[22px] p-8 h-full">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-2xl text-blue-600 dark:text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Visi Kami</h3>
+                        </div>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 italic leading-relaxed">
+                            "Menjadi mitra teknologi terpercaya yang mendorong transformasi digital berkelanjutan bagi perusahaan di berbagai industri melalui inovasi tanpa henti."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative group p-1 rounded-3xl bg-gradient-to-br from-blue-600 to-indigo-700 shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                    <div class="bg-white dark:bg-gray-900 rounded-[22px] p-8 h-full">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <div class="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-2xl text-blue-600 dark:text-blue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Misi Kami</h3>
+                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
+                                <svg class="w-5 h-5 text-blue-500 mt-1 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Menyediakan solusi teknologi yang relevan dan scalable.</span>
+                            </li>
+                            <li class="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
+                                <svg class="w-5 h-5 text-blue-500 mt-1 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Mengutamakan kualitas, keamanan, dan keandalan sistem.</span>
+                            </li>
+                            <li class="flex items-start space-x-3 text-gray-600 dark:text-gray-300">
+                                <svg class="w-5 h-5 text-blue-500 mt-1 shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                </svg>
+                                <span>Mendukung pertumbuhan bisnis klien melalui inovasi digital.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="fade-in-up">
-                <h3 class="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-4">Misi Kami</h3>
-                <ul class="space-y-3 text-gray-600 dark:text-gray-300 list-disc list-inside">
-                    <li>Menyediakan solusi teknologi yang relevan dan scalable</li>
-                    <li>Mengutamakan kualitas, keamanan, dan keandalan sistem</li>
-                    <li>Mendukung pertumbuhan bisnis klien melalui inovasi digital</li>
-                    <li>Membangun hubungan jangka panjang berbasis kepercayaan</li>
-                </ul>
-            </div>
-
         </div>
     </section>
 
@@ -213,28 +246,28 @@
 
             <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
 
-                <div class="p-6 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-xl shadow-sm fade-in-up">
+                <div class="p-6 bg-gray-100 dark:bg-gray-800 border border-transparent rounded-xl hover:border-blue-400 hover:shadow-lg fade-in-up">
                     <h4 class="font-semibold text-lg mb-2">Integrity</h4>
                     <p class="text-sm text-gray-600 dark:text-gray-300">
                         Menjunjung tinggi kejujuran dan profesionalisme.
                     </p>
                 </div>
 
-                <div class="p-6 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-xl shadow-sm fade-in-up">
+                <div class="p-6 bg-gray-100 dark:bg-gray-800 border border-transparent rounded-xl hover:border-blue-400 hover:shadow-lg fade-in-up">
                     <h4 class="font-semibold text-lg mb-2">Innovation</h4>
                     <p class="text-sm text-gray-600 dark:text-gray-300">
                         Terus berinovasi mengikuti perkembangan teknologi.
                     </p>
                 </div>
 
-                <div class="p-6 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-xl shadow-sm fade-in-up">
+                <div class="p-6 bg-gray-100 dark:bg-gray-800 border border-transparent rounded-xl hover:border-blue-400 hover:shadow-lg fade-in-up">
                     <h4 class="font-semibold text-lg mb-2">Collaboration</h4>
                     <p class="text-sm text-gray-600 dark:text-gray-300">
                         Bekerja sama untuk mencapai hasil terbaik.
                     </p>
                 </div>
 
-                <div class="p-6 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-xl shadow-sm fade-in-up">
+                <div class="p-6 bg-gray-100 dark:bg-gray-800 border border-transparent rounded-xl hover:border-blue-400 hover:shadow-lg fade-in-up">
                     <h4 class="font-semibold text-lg mb-2">Excellence</h4>
                     <p class="text-sm text-gray-600 dark:text-gray-300">
                         Memberikan kualitas terbaik dalam setiap solusi.
@@ -244,6 +277,126 @@
             </div>
         </div>
     </section>
+
+    <!-- ================= COMPANY PROFILE ================= -->
+    <section class="py-20 bg-gray-50 dark:bg-gray-800 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+                
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-transparent hover:border-blue-400 hover:shadow-lg transition-all duration-300 fade-in-left">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">2019</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-medium uppercase tracking-wider">Tahun Berdiri</p>
+                    <div class="h-1 w-10 bg-blue-600 mt-4 rounded-full"></div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-transparent hover:border-blue-400 hover:shadow-lg transition-all duration-300 fade-in-left">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">50+</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-medium uppercase tracking-wider">Solusi Terintegrasi</p>
+                    <div class="h-1 w-10 bg-blue-600 mt-4 rounded-full"></div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-transparent hover:border-blue-400 hover:shadow-lg transition-all duration-300 fade-in-right">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">30+</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-medium uppercase tracking-wider">Partner Aktif</p>
+                    <div class="h-1 w-10 bg-blue-600 mt-4 rounded-full"></div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-transparent hover:border-blue-400 hover:shadow-lg transition-all duration-300 fade-in-right">
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">4</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm font-medium uppercase tracking-wider">Pilar Keahlian</p>
+                    <div class="h-1 w-10 bg-blue-600 mt-4 rounded-full"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= COMPANY JOURNEY ================= -->
+<section class="py-24 px-6 bg-white dark:bg-gray-900 overflow-hidden">
+        <div class="max-w-6xl mx-auto relative">
+            
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400 fade-in-up">
+                    Perjalanan Kami
+                </h2>
+                <p class="text-gray-500 dark:text-gray-400 mt-4">Transformasi kami dari masa ke masa.</p>
+            </div>
+
+            <div class="relative">
+                
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 dark:bg-gray-700"></div>
+                
+                <div class="md:hidden absolute left-4 h-full w-0.5 bg-gray-200 dark:bg-gray-700"></div>
+
+                <div class="relative z-10 mb-16 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="flex-1 w-full md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+                            <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm fade-in-left">
+                                <span class="text-blue-600 font-bold text-lg">2019</span>
+                                <h4 class="font-bold text-xl mt-1 dark:text-white text-gray-900">Langkah Pertama</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mt-3 leading-relaxed">
+                                    Berawal dari tim kecil beranggotakan tiga orang, kami memulai Aurora Tech dengan misi sederhana: membantu UMKM lokal mendigitalisasi inventaris mereka.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900 z-20 order-1 md:order-2"></div>
+                        <div class="flex-1 hidden md:block order-3"></div>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mb-16 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="flex-1 hidden md:block"></div>
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900 z-20"></div>
+                        <div class="flex-1 w-full md:w-1/2 md:pl-12">
+                            <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm fade-in-right">
+                                <span class="text-blue-600 font-bold text-lg">2021</span>
+                                <h4 class="font-bold text-xl mt-1 dark:text-white text-gray-900">Adaptasi & Cloud</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mt-3 leading-relaxed">
+                                    Kami membantu belasan perusahaan bertransformasi menjadi remote-ready melalui integrasi Cloud. Di sinilah identitas kami sebagai partner infrastruktur terbentuk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mb-16 md:mb-24">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="flex-1 w-full md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+                            <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm fade-in-left">
+                                <span class="text-blue-600 font-bold text-lg">2023</span>
+                                <h4 class="font-bold text-xl mt-1 dark:text-white text-gray-900">Ekspansi Nasional</h4>
+                                <p class="text-gray-600 dark:text-gray-300 text-sm mt-3 leading-relaxed">
+                                    Kami meresmikan kantor pusat baru dan mulai menangani proyek skala nasional. Fokus kami meluas ke sektor FinTech dan Enterprise Resource Planning (ERP).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-600 rounded-full border-4 border-white dark:border-gray-900 z-20 order-1 md:order-2"></div>
+                        <div class="flex-1 hidden md:block order-3"></div>
+                    </div>
+                </div>
+
+                <div class="relative z-10">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="flex-1 hidden md:block"></div>
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-20"></div>
+                        <div class="flex-1 w-full md:w-1/2 md:pl-12">
+                            <div class="bg-blue-600 p-8 rounded-2xl shadow-xl fade-in-right">
+                                <span class="text-blue-200 font-bold text-lg">2025+</span>
+                                <h4 class="font-bold text-xl mt-1 text-white">Visi Masa Depan</h4>
+                                <p class="text-blue-50 text-sm mt-3 leading-relaxed">
+                                    Kini Aurora Tech menjadi mitra strategis bagi perusahaan global untuk membangun ekosistem digital yang aman, efisien, dan berkelanjutan.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- ================= CTA ================= -->
     <section class="py-20 bg-blue-600 dark:text-blue-400 px-6 text-center">
@@ -283,11 +436,11 @@
             <div>
                 <h4 class="text-white font-semibold text-lg mb-4">Navigasi</h4>
                 <ul class="space-y-2">
-                    <li><a href="index.html#home" class="hover:text-white transition">Home</a></li>
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
                     <li><a href="about.html" class="hover:text-white transition">Tentang</a></li>
-                    <li><a href="index.html#services" class="hover:text-white transition">Layanan</a></li>
-                    <li><a href="index.html#projects" class="hover:text-white transition">Proyek</a></li>
-                    <li><a href="index.html#contact" class="hover:text-white transition">Kontak</a></li>
+                    <li><a href="services.html" class="hover:text-white transition">Layanan</a></li>
+                    <li><a href="projects.html" class="hover:text-white transition">Proyek</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Kontak</a></li>
                     <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
                 </ul>
             </div>

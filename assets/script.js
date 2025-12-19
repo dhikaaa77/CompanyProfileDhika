@@ -156,47 +156,48 @@ document.querySelectorAll(
 ).forEach(el => observer.observe(el));
 
 // ===============================
-// Contact Form Modal (FINAL FIX)
+// Contact Form Modal (FIXED LOGIC)
 // ===============================
-const form = document.getElementById("contactForm");
-const submitBtn = document.getElementById("submitBtn");
-const modal = document.getElementById("successModal");
-const closeModal = document.getElementById("closeModal");
+const contactForm = document.getElementById("contactForm");
+const successModal = document.getElementById("successModal");
+const closeModalBtn = document.getElementById("closeModal");
 
-// Klik Kirim Pesan
-submitBtn.addEventListener("click", () => {
-    // tampilkan modal
-    modal.classList.remove("hidden");
-    modal.classList.add("flex");
-});
+if (contactForm) {
+    // Kita gunakan event 'submit' agar validasi 'required' pada HTML tetap jalan
+    contactForm.addEventListener("submit", function (e) {
+        e.preventDefault(); // Mencegah reload halaman
 
-// Function RESET + GO HOME (dipakai di beberapa tempat)
-function closeModalAndReset() {
-    // tutup modal
-    modal.classList.add("hidden");
-    modal.classList.remove("flex");
+        // Munculkan Modal
+        successModal.classList.remove("hidden");
+        successModal.classList.add("flex");
+        
+        // Tambahkan sedikit delay animasi jika ada di CSS
+        successModal.querySelector('div').classList.add('animate-bounce-in'); 
 
-    // reset form (PASTI)
-    form.reset();
-
-    // pindah ke home
-    window.location.hash = "#home";
-
-    // fallback biar smooth (jaga-jaga)
-    document.getElementById("home").scrollIntoView({
-        behavior: "smooth"
+        // Reset isi form setelah dikirim
+        contactForm.reset();
     });
 }
 
-// Klik tombol Tutup
-closeModal.addEventListener("click", closeModalAndReset);
+// Logika menutup modal dan pindah halaman
+if (closeModalBtn) {
+    closeModalBtn.addEventListener("click", () => {
+        successModal.classList.add("hidden");
+        successModal.classList.remove("flex");
 
-// // Klik area gelap (overlay)
-// modal.addEventListener("click", (e) => {
-//     if (e.target === modal) {
-//         closeModalAndReset();
-//     }
-// });
+        // Redirect ke index.html (Beranda)
+        window.location.href = "index.html";
+    });
+}
+
+// Tutup modal saat user klik di luar kotak putih (overlay)
+successModal.addEventListener("click", (e) => {
+    if (e.target === successModal) {
+        successModal.classList.add("hidden");
+        successModal.classList.remove("flex");
+        window.location.href = "index.html";
+    }
+});
 
 
 

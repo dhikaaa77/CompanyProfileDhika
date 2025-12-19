@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id" class="transition-colors duration-300">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Layanan Aurora Tech Solutions – solusi pengembangan aplikasi, cloud, integrasi sistem, dan konsultasi IT untuk bisnis modern.">
+
+    <title>Layanan | Aurora Tech Solutions</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='favGrad' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2360a5fa;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M15 85 C 15 85, 40 20, 85 15' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M30 85 C 30 85, 50 35, 85 30' stroke='%232563eb' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M45 85 C 45 85, 60 50, 85 45' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='85' cy='15' r='8' fill='%232563eb'/%3E%3C/svg%3E">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center">
+
+            <!-- LEFT: LOGO -->
+            <a href="index.html" class="flex items-center space-x-2">
+                <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#2563eb" />
+                            <stop offset="100%" stop-color="#60a5fa" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M15 85 C 15 85, 40 20, 85 15" stroke="url(#logoGrad)" stroke-width="6"
+                        stroke-linecap="round" />
+                    <path d="M30 85 C 30 85, 50 35, 85 30" stroke="#2563eb" stroke-width="6" stroke-linecap="round" />
+                    <path d="M45 85 C 45 85, 60 50, 85 45" stroke="url(#logoGrad)" stroke-width="6"
+                        stroke-linecap="round" />
+                </svg>
+                <span class="font-bold text-xl text-blue-600 dark:text-blue-400">
+                    Aurora Tech
+                </span>
+            </a>
+
+            <!-- RIGHT: MENU + ACTION -->
+            <div class="ml-auto flex items-center space-x-6">
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex space-x-8 font-medium">
+                    <li><a href="index.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="home">Home</a></li>
+                    <li><a href="about.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="about">Tentang</a></li>
+                    <li><a href="services.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="services">Layanan</a></li>
+                    <li><a href="projects.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="projects">Proyek</a></li>
+                    <li><a href="contact.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
+                            data-section="contact">Kontak</a></li>
+                    <li><a href="blog.html"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300">Blog</a>
+                    </li>
+                </ul>
+
+                <!-- Dark Mode Toggle (Universal) -->
+                <button id="darkToggle" aria-label="Toggle Dark Mode" class="relative w-11 h-11 rounded-full
+                       bg-white dark:bg-gray-800
+                       flex items-center justify-center
+                       shadow-md transition-colors duration-300">
+
+                    <!-- Sun -->
+                    <svg id="iconSun" xmlns="http://www.w3.org/2000/svg" class="absolute w-5 h-5 text-yellow-500
+                           transition-opacity duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.364-6.364
+                           l-1.414 1.414M7.05 16.95
+                           l-1.414 1.414m0-11.314
+                           L7.05 7.05m9.9 9.9
+                           l1.414 1.414M12 8a4 4 0 100 8 4 4 0 000-8z" />
+                    </svg>
+
+                    <!-- Moon -->
+                    <svg id="iconMoon" xmlns="http://www.w3.org/2000/svg" class="absolute w-5 h-5 text-gray-200
+                           opacity-0 transition-opacity duration-300" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12.79A9 9 0 1111.21 3
+                             7 7 0 0021 12.79z" />
+                    </svg>
+                </button>
+
+                <!-- Hamburger (Mobile Only) -->
+                <button id="menuBtn" class="md:hidden flex flex-col justify-between w-8 h-6 group z-[60]">
+
+                    <span class="h-0.5 w-full bg-gray-800 dark:bg-gray-100
+               transition-all duration-300
+               group-[.hamburger-active]:rotate-45
+               group-[.hamburger-active]:translate-y-[11px]">
+                    </span>
+
+                    <span class="h-0.5 w-full bg-gray-800 dark:bg-gray-100
+               transition-all duration-300
+               group-[.hamburger-active]:opacity-0">
+                    </span>
+
+                    <span class="h-0.5 w-full bg-gray-800 dark:bg-gray-100
+               transition-all duration-300
+               group-[.hamburger-active]:-rotate-45
+               group-[.hamburger-active]:-translate-y-[11px]">
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden
+           absolute top-full left-0 w-full
+           bg-white dark:bg-gray-800
+           border-t px-6 py-4 shadow-lg
+           z-40
+           opacity-0 transition-all duration-300 transform -translate-y-4">
+            <a href="index.html" class="block py-2 mobile-link">Home</a>
+            <a href="about.html" class="block py-2 mobile-link">Tentang</a>
+            <a href="services.html" class="block py-2 mobile-link">Layanan</a>
+            <a href="projects.html" class="block py-2 mobile-link">Proyek</a>
+            <a href="contact.html" class="block py-2 mobile-link">Kontak</a>
+            <a href="blog.html" class="block py-2 mobile-link">Blog</a>
+        </div>
+    </nav>
+    
+    <!-- ================= DETAILED SERVICES ================= -->
+    <section class="pt-40 pb-24 px-6 relative overflow-hidden bg-slate-50 dark:bg-gray-900/50">
+        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-blue-100 dark:bg-blue-900/20 rounded-full blur-3xl opacity-50"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-widest uppercase mb-4 fade-in-up">
+                Our Expertise
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white fade-in-up leading-tight">
+                Solusi Digital <span class="text-blue-600 dark:text-blue-400">Tanpa Batas</span>
+            </h1>
+            <p class="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto fade-in-up leading-relaxed">
+                Dari ide hingga eksekusi, kami menghadirkan teknologi mutakhir untuk mempercepat pertumbuhan bisnis Anda di era digital.
+            </p>
+        </div>
+    </section>
+    <!-- ================= SERVICE DETAILS ================= -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="group p-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in-up">
+                    <div class="w-14 h-14 bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-blue-600 dark:text-blue-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9-9c1.657 0 3 1.343 3 3s-1.343 3-3 3m0-6c-1.657 0-3 1.343-3 3s1.343 3 3 3m-3-7V3m-2 4h4" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 dark:text-white">Web Development</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">Website responsif, cepat, dan SEO-friendly menggunakan teknologi terbaru seperti React dan Next.js.</p>
+                    <ul class="text-xs space-y-2 text-gray-500">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> Company Profile</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> E-Commerce Platform</li>
+                    </ul>
+                </div>
+
+                <div class="group p-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in-up">
+                    <div class="w-14 h-14 bg-indigo-100 dark:bg-indigo-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 dark:text-white">Mobile Development</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">Aplikasi iOS dan Android native atau cross-platform dengan user experience yang mulus.</p>
+                    <ul class="text-xs space-y-2 text-gray-500">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></span> iOS & Android Development</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-indigo-500 rounded-full mr-2"></span> Flutter & React Native</li>
+                    </ul>
+                </div>
+
+                <div class="group p-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in-up">
+                    <div class="w-14 h-14 bg-cyan-100 dark:bg-cyan-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-cyan-600 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-cyan-600 dark:text-cyan-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 dark:text-white">Cloud Infrastructure</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">Migrasi dan manajemen cloud yang aman untuk memastikan sistem Anda selalu online 24/7.</p>
+                    <ul class="text-xs space-y-2 text-gray-500">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></span> AWS & Google Cloud</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-cyan-500 rounded-full mr-2"></span> Serverless Setup</li>
+                    </ul>
+                </div>
+
+                <div class="group p-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in-up">
+                    <div class="w-14 h-14 bg-pink-100 dark:bg-pink-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-pink-600 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-pink-600 dark:text-pink-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 dark:text-white">UI/UX Design</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">Desain antarmuka yang modern dan pengalaman pengguna yang intuitif untuk kepuasan pelanggan.</p>
+                    <ul class="text-xs space-y-2 text-gray-500">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span> Wireframing & Prototyping</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-pink-500 rounded-full mr-2"></span> Design System Branding</li>
+                    </ul>
+                </div>
+
+                <div class="group p-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in-up">
+                    <div class="w-14 h-14 bg-red-100 dark:bg-red-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-red-600 dark:text-red-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 dark:text-white">Cyber Security</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">Lindungi data bisnis Anda dari serangan siber dengan sistem keamanan berlapis.</p>
+                    <ul class="text-xs space-y-2 text-gray-500">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> Security Audit</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-red-500 rounded-full mr-2"></span> Encrypted Databases</li>
+                    </ul>
+                </div>
+
+                <div class="group p-8 bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-3xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 fade-in-up">
+                    <div class="w-14 h-14 bg-purple-100 dark:bg-purple-900/30 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors duration-300">
+                        <svg class="w-8 h-8 text-purple-600 dark:text-purple-400 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 dark:text-white">AI & Automation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-6">Otomasi proses bisnis Anda menggunakan kecerdasan buatan untuk hasil yang lebih maksimal.</p>
+                    <ul class="text-xs space-y-2 text-gray-500">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></span> Chatbot Intelligent</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></span> Data Analytics</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HOW WE WORK ================= -->
+    <section class="py-24 bg-gray-50 dark:bg-gray-800/30 px-6">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <span class="text-blue-600 dark:text-blue-400 font-bold tracking-widest uppercase text-sm">Proses Kerja</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mt-2 dark:text-white">Bagaimana Kami Membantu Anda?</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                
+                <div class="group relative p-8 bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg transform group-hover:rotate-12 transition-transform">
+                        01
+                    </div>
+                    <div class="mb-6 w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">Konsultasi</h4>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                        Kami mendengarkan tantangan bisnis Anda dan memetakan solusi teknologi yang paling efektif dan efisien.
+                    </p>
+                </div>
+
+                <div class="group relative p-8 bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg transform group-hover:rotate-12 transition-transform">
+                        02
+                    </div>
+                    <div class="mb-6 w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A2 2 0 013 15.382V5.618a2 2 0 011.553-1.944l6-1.5a2 2 0 011.894.448L15 6m-6 14l6-3m-6 3V7m6 10l4.553 2.276A2 2 0 0021 17.382V7.618a2 2 0 00-1.553-1.944l-6-1.5a2 2 0 00-1.894.448L9 6m6 11V6" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">Perencanaan</h4>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                        Tim kami merancang arsitektur sistem dan roadmap pengembangan yang transparan dan terukur.
+                    </p>
+                </div>
+
+                <div class="group relative p-8 bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg transform group-hover:rotate-12 transition-transform">
+                        03
+                    </div>
+                    <div class="mb-6 w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">Pengembangan</h4>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                        Proses coding dan integrasi dilakukan dengan standar keamanan tinggi dan pengujian kualitas berkala.
+                    </p>
+                </div>
+
+                <div class="group relative p-8 bg-white dark:bg-gray-800 rounded-3xl border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-xl hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="absolute -top-4 -right-4 w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-lg transform group-hover:rotate-12 transition-transform">
+                        04
+                    </div>
+                    <div class="mb-6 w-14 h-14 bg-blue-50 dark:bg-blue-900/20 rounded-xl flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3 dark:text-white">Peluncuran</h4>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                        Sistem dirilis dengan pendampingan penuh untuk memastikan transisi operasional berjalan mulus.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- ================= CTA ================= -->
+    <section class="py-20 bg-blue-600 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M0 100 C 20 0 50 0 100 100 Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="relative z-10 text-center px-6">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white fade-in-up">
+                Siap Melangkah ke Level Berikutnya?
+            </h2>
+            <p class="text-blue-100 mt-4 max-w-xl mx-auto fade-in-up">
+                Jangan biarkan bisnis Anda tertinggal. Hubungi tim ahli kami untuk konsultasi gratis hari ini.
+            </p>
+            <div class="mt-10 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6 fade-in-up">
+                <a href="contact.html" class="bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold hover:bg-blue-50 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Hubungi Kami Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-4 gap-8 mb-8">
+            <div class="col-span-1 md:col-span-2">
+                <div class="flex items-center space-x-2 mb-4">
+                    <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 85 C 15 85, 40 20, 85 15" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M30 85 C 30 85, 50 35, 85 30" stroke="white" stroke-width="6" stroke-linecap="round"
+                            fill="none" />
+                        <path d="M45 85 C 45 85, 60 50, 85 45" stroke="#60a5fa" stroke-width="6" stroke-linecap="round"
+                            fill="none" />
+                        <circle cx="85" cy="15" r="5" fill="white" />
+                    </svg>
+                    <span class="font-bold text-xl text-white">Aurora Tech</span>
+                </div>
+                <p class="text-gray-400 pr-4">Mitra teknologi terpercaya untuk transformasi digital bisnis Anda.
+                    Inovasi, Kualitas, dan Keandalan.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-lg mb-4">Navigasi</h4>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
+                    <li><a href="about.html" class="hover:text-white transition">Tentang</a></li>
+                    <li><a href="services.html" class="hover:text-white transition">Layanan</a></li>
+                    <li><a href="projects.html" class="hover:text-white transition">Proyek</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition">Kontak</a></li>
+                    <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold text-lg mb-4">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:text-white transition">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-6xl mx-auto px-6 pt-8 border-t border-gray-800 text-center md:text-left md:flex justify-between items-center">
+            <p class="text-sm">© 2025 Aurora Tech Solutions. All rights reserved.</p>
+            <div class="flex space-x-4 mt-4 md:mt-0 justify-center">
+                <a href="https://www.linkedin.com/feed/" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="https://www.instagram.com/accounts/login/" class="text-gray-400 hover:text-white">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

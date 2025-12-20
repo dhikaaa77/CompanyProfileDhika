@@ -4,21 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keamanan Data di Era Digital | Aurora Tech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='favGrad' x1='0%25' y1='100%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%232563eb;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%2360a5fa;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M15 85 C 15 85, 40 20, 85 15' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M30 85 C 30 85, 50 35, 85 30' stroke='%232563eb' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Cpath d='M45 85 C 45 85, 60 50, 85 45' stroke='url(%23favGrad)' stroke-width='10' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='85' cy='15' r='8' fill='%232563eb'/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Cloud Computing untuk Bisnis | Aurora Tech</title>
-
-    <meta name="description"
-        content="Mengenal cloud computing dan manfaatnya bagi perusahaan modern dalam meningkatkan efisiensi, keamanan, dan skalabilitas sistem.">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = { darkMode: 'class' }
-    </script>
 </head>
 
-<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
 
     <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
 
@@ -64,7 +58,7 @@
                     <li><a href="contact.html"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="contact">Kontak</a></li>
-                    <li><a href="blog.html"
+                    <li><a href="blog.html" data-section="blog"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300">Blog</a>
                     </li>
                 </ul>
@@ -132,145 +126,149 @@
         </div>
     </nav>
 
-
     <main class="pt-32 pb-24 px-6 bg-slate-50 dark:bg-gray-900 transition-colors">
         <div class="max-w-4xl mx-auto">
 
-            <div class="mb-10 text-center fade-in-up">
+            <div class="mb-12 text-center fade-in-up">
                 <a href="blog.html"
                     class="inline-flex items-center text-blue-600 dark:text-blue-400 hover:gap-2 transition-all text-sm font-bold uppercase tracking-widest mb-6 group">
                     <span class="transform group-hover:-translate-x-1 transition-transform">←</span> Kembali ke Blog
                 </a>
-                <h1 class="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
-                    Cloud Computing: <span class="text-blue-600">Fondasi Utama</span> Pertumbuhan Bisnis
+                <h1 class="text-4xl md:text-6xl font-black text-slate-900 dark:text-white mb-6 leading-[1.1]">
+                    Keamanan Data: Benteng Terakhir di <span class="text-blue-600">Era Digital</span>
                 </h1>
-                <div
-                    class="flex flex-wrap items-center justify-center gap-6 text-gray-500 text-sm border-b border-gray-200 dark:border-gray-800 pb-8">
-                    <span class="flex items-center gap-2">
-                        <img src="https://ui-avatars.com/api/?name=Aurora+Tech&background=2563eb&color=fff"
-                            class="w-6 h-6 rounded-full" alt="Author">
-                        Oleh Editor Aurora Tech
-                    </span>
+                <div class="flex items-center justify-center gap-4 text-gray-500 dark:text-gray-400 text-sm">
+                    <span>Oleh: <strong>Tim Ahli Aurora</strong></span>
                     <span>•</span>
-                    <span>15 Oktober 2023</span>
+                    <span>5 Menit Membaca</span>
                     <span>•</span>
-                    <span
-                        class="bg-blue-100 dark:bg-blue-900/30 text-blue-600 px-3 py-1 rounded-full text-xs font-bold">TEKNOLOGI</span>
+                    <span>20 Des 2025</span>
                 </div>
             </div>
 
-            <div class="relative w-full h-[300px] md:h-[500px] rounded-[2rem] overflow-hidden mb-16 shadow-2xl fade-in-up"
+            <div class="relative h-[300px] md:h-[500px] w-full mb-16 rounded-[2.5rem] overflow-hidden shadow-2xl fade-in-up"
                 style="animation-delay: 0.2s">
-                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200"
-                    class="w-full h-full object-cover" alt="Cloud Data Center Technology">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
-                <div class="absolute bottom-8 left-8 text-white">
-                    <p class="text-sm font-light opacity-80 uppercase tracking-widest">Visualisasi Infrastruktur Cloud
-                        Modern</p>
-                </div>
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200"
+                    class="w-full h-full object-cover" alt="Cyber Security Visual">
+                <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 to-transparent"></div>
             </div>
 
             <article
-                class="prose prose-lg dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed">
+                class="prose prose-lg dark:prose-invert max-w-none text-gray-700 dark:text-gray-300 leading-relaxed space-y-8">
+
                 <p
-                    class="text-xl font-medium text-slate-800 dark:text-slate-200 mb-8 italic border-l-4 border-blue-600 pl-6">
-                    "Cloud computing bukan lagi pilihan, melainkan standar baru bagi bisnis yang ingin tetap relevan di
-                    pasar global yang serba digital."
+                    class="text-xl font-medium text-slate-800 dark:text-slate-200 first-letter:text-5xl first-letter:font-bold first-letter:text-blue-600 first-letter:mr-3 first-letter:float-left">
+                    Di era digital saat ini, data bukan lagi sekadar angka di atas layar. Ia telah menjadi "The New Oil"
+                    — aset paling berharga yang menggerakkan roda ekonomi global. Namun, seperti halnya emas, data
+                    mengundang pihak-pihak yang tidak bertanggung jawab untuk mengeksploitasi celah keamanan demi
+                    keuntungan pribadi.
                 </p>
 
-                <p class="mb-6">
-                    Bayangkan jika bisnis Anda tidak lagi perlu mengkhawatirkan biaya perawatan server fisik yang mahal
-                    atau risiko kehilangan data akibat kerusakan perangkat keras. Itulah kekuatan dari <strong>Cloud
-                        Computing</strong>. Secara sederhana, cloud computing adalah pengiriman layanan
-                    komputasi—termasuk server, penyimpanan, database, jaringan, dan perangkat lunak—melalui internet.
+                <p>
+                    Serangan siber bukan lagi pertanyaan "jika", melainkan "kapan". Berdasarkan laporan keamanan global
+                    terbaru tahun 2025, frekuensi serangan <strong>Ransomware</strong> meningkat hingga 40% dibandingkan
+                    tahun sebelumnya, menyasar sektor bisnis dari skala UMKM hingga korporasi multinasional.
                 </p>
 
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mt-12 mb-6 tracking-tight">Keuntungan
-                    Strategis Mengadopsi Teknologi Cloud</h2>
-                <p class="mb-6">
-                    Bukan sekadar tren teknologi, migrasi ke cloud memberikan dampak nyata pada efisiensi biaya dan
-                    kecepatan operasional perusahaan:
+                <div class="bg-blue-600/5 dark:bg-blue-500/10 border-l-4 border-blue-600 p-8 rounded-r-2xl my-10">
+                    <h4 class="text-blue-600 dark:text-blue-400 font-bold mb-2">Mengapa Perusahaan Anda Menjadi Target?
+                    </h4>
+                    <p class="text-sm m-0 italic text-slate-600 dark:text-slate-400">
+                        "Peretas tidak selalu mencari target yang besar, mereka mencari target yang paling lemah.
+                        Keamanan data yang buruk adalah undangan terbuka bagi kejahatan siber."
+                    </p>
+                </div>
+
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mt-12 mb-6">Tantangan Utama: Manusia dan
+                    Sistem</h2>
+                <p>
+                    Banyak yang mengira bahwa tembok api (firewall) tercanggih sudah cukup. Faktanya, <strong>80%
+                        kebocoran data</strong> diawali oleh kesalahan manusia (human error). Phishing yang sangat
+                    meyakinkan kini menggunakan teknologi AI untuk meniru suara atau cara penulisan atasan Anda
+                    (Deepfake).
                 </p>
 
-                <ul class="space-y-4 mb-10 not-prose">
-                    <li
-                        class="flex gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border border-transparent hover:border-blue-400 hover:shadow-lg">
-                        <span class="text-blue-600 font-bold">01.</span>
-                        <span><strong>Skalabilitas Tanpa Batas:</strong> Anda bisa menambah kapasitas penyimpanan atau
-                            kekuatan server hanya dengan beberapa klik saat trafik bisnis melonjak.</span>
+                <ul class="space-y-4 my-8">
+                    <li class="flex items-start gap-3">
+                        <span
+                            class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-xs font-bold">1</span>
+                        <span><strong>Sistem Warisan (Legacy Systems):</strong> Software lama yang tidak lagi menerima
+                            pembaruan keamanan.</span>
                     </li>
-                    <li
-                        class="flex gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-transparent hover:border-blue-400 hover:shadow-lg">
-                        <span class="text-blue-600 font-bold">02.</span>
-                        <span><strong>Efisiensi Biaya (Pay-as-you-go):</strong> Anda hanya membayar apa yang Anda
-                            gunakan. Tidak ada lagi biaya listrik server yang menyala 24 jam.</span>
+                    <li class="flex items-start gap-3">
+                        <span
+                            class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-xs font-bold">2</span>
+                        <span><strong>Kurangnya Pelatihan:</strong> Karyawan tidak dibekali cara mengenali email atau
+                            link mencurigakan.</span>
                     </li>
-                    <li
-                        class="flex gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-transparent hover:border-blue-400 hover:shadow-lg">
-                        <span class="text-blue-600 font-bold">03.</span>
-                        <span><strong>Keamanan & Pemulihan:</strong> Standar keamanan kelas dunia dengan sistem backup
-                            otomatis di berbagai lokasi geografis.</span>
-                    </li>
-                    <li
-                        class="flex gap-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-transparent hover:border-blue-400 hover:shadow-lg">
-                        <span class="text-blue-600 font-bold">04.</span>
-                        <span><strong>Aksesibilitas Global:</strong> Tim Anda bisa bekerja dari mana saja, memastikan
-                            kolaborasi tetap berjalan meski dalam sistem remote.</span>
+                    <li class="flex items-start gap-3">
+                        <span
+                            class="flex-shrink-0 w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-xs font-bold">3</span>
+                        <span><strong>Akses Tanpa Batas:</strong> Memberikan akses data sensitif kepada terlalu banyak
+                            orang dalam organisasi.</span>
                     </li>
                 </ul>
 
-                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mt-12 mb-6 tracking-tight">Memahami Model
-                    Layanan Cloud</h2>
-                <p class="mb-8">Sebelum memulai migrasi, penting untuk memahami solusi mana yang paling tepat untuk
-                    bisnis Anda:</p>
+                <h2 class="text-3xl font-bold text-slate-900 dark:text-white mt-12 mb-6">Langkah Strategis Perlindungan
+                </h2>
+                <p>
+                    Lalu, bagaimana Aurora Tech membantu klien dalam membangun benteng pertahanan? Kami menerapkan
+                    prinsip <strong>Zero Trust Architecture</strong>. Jangan pernah percaya, selalu verifikasi.
+                </p>
 
-                <div class="grid md:grid-cols-3 gap-6 not-prose mb-16">
-                    <div
-                        class="group p-6 bg-gradient-to-b from-slate-50 to-white dark:from-gray-800 dark:to-gray-800 border border-transparent hover:border-blue-400 hover:shadow-lg rounded-2xl hover:border-blue-500 transition-all shadow-sm">
-                        <h3 class="font-black text-2xl text-blue-600 mb-3">SaaS</h3>
-                        <p class="text-sm leading-relaxed opacity-80">Software as a Service. Contoh: Google Workspace,
-                            Slack, atau CRM Online.</p>
-                    </div>
-                    <div
-                        class="group p-6 bg-gradient-to-b from-slate-50 to-white dark:from-gray-800 dark:to-gray-800 border border-transparent hover:border-blue-400 hover:shadow-lg rounded-2xl hover:border-blue-500 transition-all shadow-sm">
-                        <h3 class="font-black text-2xl text-blue-600 mb-3">PaaS</h3>
-                        <p class="text-sm leading-relaxed opacity-80">Platform as a Service. Cocok untuk pengembang yang
-                            ingin fokus membangun aplikasi.</p>
-                    </div>
-                    <div
-                        class="group p-6 bg-gradient-to-b from-slate-50 to-white dark:from-gray-800 dark:to-gray-800 border border-transparent hover:border-blue-400 hover:shadow-lg rounded-2xl hover:border-blue-500 transition-all shadow-sm">
-                        <h3 class="font-black text-2xl text-blue-600 mb-3">IaaS</h3>
-                        <p class="text-sm leading-relaxed opacity-80">Infrastructure as a Service. Kontrol penuh atas
-                            server virtual dan jaringan.</p>
-                    </div>
-                </div>
+                <blockquote
+                    class="border-none bg-slate-100 dark:bg-slate-800 p-10 rounded-[2rem] relative overflow-hidden my-12">
+                    <svg class="absolute top-4 left-4 w-12 h-12 text-slate-200 dark:text-slate-700 transform -rotate-12"
+                        fill="currentColor" viewBox="0 0 32 32">
+                        <path d="M10 8v8H6v-8h4zm12 0v8h-4v-8h4z" />
+                    </svg>
+                    <p class="relative z-10 text-2xl font-serif italic text-slate-800 dark:text-slate-200">
+                        "Keamanan data bukan tentang membangun tembok setinggi mungkin, tapi tentang mengetahui siapa
+                        yang memegang kunci pintu Anda setiap saat."
+                    </p>
+                </blockquote>
 
-                <div
-                    class="mt-20 pt-10 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row md:items-center justify-between gap-8 not-prose">
-
-                    <div class="flex flex-wrap gap-2">
-                        <a href="#"
-                            class="px-4 py-1.5 bg-slate-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm hover:bg-blue-600 hover:text-white transition-colors">#CloudComputing</a>
-                        <a href="#"
-                            class="px-4 py-1.5 bg-slate-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm hover:bg-blue-600 hover:text-white transition-colors">#DigitalTransformation</a>
-                        <a href="#"
-                            class="px-4 py-1.5 bg-slate-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 rounded-full text-sm hover:bg-blue-600 hover:text-white transition-colors">#TechGuide</a>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <span class="text-sm font-bold text-gray-400 uppercase tracking-widest">Bagikan:</span>
-                        <div class="flex gap-4">
-                            <a href="https://www.linkedin.com/feed/" class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all shadow-sm">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            </a>
-                            <a href="https://www.instagram.com/accounts/login/" class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all shadow-sm">
-                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <p>
+                    Sebagai penutup, investasi pada keamanan data bukan hanya soal membeli tool mahal. Ini adalah soal
+                    membangun budaya sadar digital di setiap lini perusahaan Anda. Bersama <strong>Aurora Tech</strong>,
+                    kami siap mendampingi perjalanan transformasi Anda agar tetap aman, nyaman, dan terus bertumbuh
+                    tanpa rasa takut akan ancaman siber.
+                </p>
 
             </article>
+
+
+            <div
+                class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex gap-2">
+                    <span
+                        class="px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-bold">#CyberSecurity</span>
+                    <span
+                        class="px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-bold">#TechTips</span>
+                    <span
+                        class="px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-full text-xs font-bold">#DigitalTransformation</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-sm font-bold uppercase tracking-widest text-gray-500">Bagikan:</span>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/feed/"
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all shadow-sm">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/accounts/login/"
+                            class="w-10 h-10 rounded-full border border-slate-200 dark:border-slate-700 flex items-center justify-center text-slate-500 hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all shadow-sm">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -299,7 +297,8 @@
                 <ul class="space-y-2">
                     <li><a href="index.html" class="hover:text-white transition">Home</a></li>
                     <li><a href="blog.html" class="hover:text-white transition">Blog</a></li>
-                    <li><a href="blog-transformasi-digital.html" class="hover:text-white transition">Transformasi Digital</a></li>
+                    <li><a href="blog-transformasi-digital.html" class="hover:text-white transition">Transformasi
+                            Digital</a></li>
                     <li><a href="blog-cloud-computing.html" class="hover:text-white transition">Cloud Computing</a></li>
                     <li><a href="blog-aplikasi-custom.html" class="hover:text-white transition">Aplikasi Custom</a></li>
                     <li><a href="blog-security.html" class="hover:text-white transition">Keamanan Data</a></li>

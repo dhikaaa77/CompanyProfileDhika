@@ -61,8 +61,8 @@
                     <li><a href="contact.html"
                             class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300"
                             data-section="contact">Kontak</a></li>
-                    <li><a href="blog.html"
-                            data-section="blog" class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300">Blog</a>
+                    <li><a href="blog.html" data-section="blog"
+                            class="nav-link hover:text-blue-600 hover:-translate-y-0.5 transition-all duration-300">Blog</a>
                     </li>
                 </ul>
 
@@ -139,53 +139,216 @@
             </p>
         </div>
 
-        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            <!-- card 1 -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
             <div
-                class="flex flex-col h-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
-                <h3 class="text-xl font-bold mb-3">
-                    Transformasi Digital untuk Perusahaan
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">
-                    Memahami peran teknologi dalam meningkatkan efisiensi dan daya saing bisnis.
-                </p>
-                <div class="mt-auto">
-                    <a href="blog-transformasi-digital.html"
-                        class="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline">
-                        Baca Artikel →
-                    </a>
+                class="group flex flex-col h-full bg-white dark:bg-slate-800/40 backdrop-blur-md border border-slate-200 dark:border-slate-700 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2">
+                <div class="relative h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        alt="Transformasi Digital">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.2em] text-blue-600 dark:text-blue-400 uppercase mb-3">Strategy</span>
+                    <h3
+                        class="text-xl font-extrabold mb-3 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        Transformasi Digital untuk Perusahaan
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-8">
+                        Memahami peran teknologi dalam meningkatkan efisiensi dan daya saing bisnis di era yang serba
+                        cepat.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="blog-transformasi-digital.html"
+                            class="inline-flex items-center text-sm font-bold text-gray-900 dark:text-white group/link">
+                            Baca Artikel
+                            <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-2 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- card 2 -->
+
             <div
-                class="flex flex-col h-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
-                <h3 class="text-xl font-bold mb-3">
-                    Cloud Computing untuk Bisnis
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">
-                    Mengenal manfaat cloud sebagai fondasi sistem bisnis modern.
-                </p>
-                <div class="mt-auto">
-                    <a href="blog-cloud-computing.html" class="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline">
-                        Baca Artikel →
-                    </a>
+                class="group flex flex-col h-full bg-white dark:bg-slate-800/40 backdrop-blur-md border border-slate-200 dark:border-slate-700 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2">
+                <div class="relative h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        alt="Cloud Computing">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.2em] text-yellow-600 dark:text-yellow-400 uppercase mb-3">Infrastructure</span>
+                    <h3
+                        class="text-xl font-extrabold mb-3 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        Cloud Computing untuk Bisnis Modern
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-8">
+                        Mengenal manfaat infrastruktur cloud sebagai fondasi sistem bisnis yang scalable dan efisien.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="blog-cloud-computing.html"
+                            class="inline-flex items-center text-sm font-bold text-gray-900 dark:text-white group/link">
+                            Baca Artikel
+                            <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-2 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <!-- card 3 -->
+
             <div
-                class="flex flex-col h-full bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-xl p-6 shadow hover:shadow-xl transition">
-                <h3 class="text-xl font-bold mb-3">
-                    Pentingnya Aplikasi Custom
-                </h3>
-                <p class="text-gray-600 dark:text-gray-300 text-sm mb-6">
-                    Alasan perusahaan membutuhkan aplikasi yang sesuai dengan proses bisnis.
-                </p>
-                <div class="mt-auto">
-                    <a href="blog-aplikasi-custom.html" class="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline">
-                        Baca Artikel →
-                    </a>
+                class="group flex flex-col h-full bg-white dark:bg-slate-800/40 backdrop-blur-md border border-slate-200 dark:border-slate-700 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2">
+                <div class="relative h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        alt="Custom Apps">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.2em] text-orange-600 dark:text-orange-400 uppercase mb-3">Development</span>
+                    <h3
+                        class="text-xl font-extrabold mb-3 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        Pentingnya Aplikasi Custom
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-8">
+                        Mengapa perusahaan Anda membutuhkan solusi perangkat lunak yang dirancang khusus sesuai alur
+                        bisnis.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="blog-aplikasi-custom.html"
+                            class="inline-flex items-center text-sm font-bold text-gray-900 dark:text-white group/link">
+                            Baca Artikel
+                            <svg class="w-4 h-4 ml-2 transform group-hover/link:translate-x-2 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
+            <div
+                class="group flex flex-col h-full bg-white dark:bg-slate-800/40 backdrop-blur-md border border-slate-200 dark:border-slate-700 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2">
+                <div class="relative h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        alt="Cyber Security">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.2em] text-rose-600 dark:text-rose-400 uppercase mb-3">Security</span>
+                    <h3
+                        class="text-xl font-extrabold mb-3 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        Keamanan Data di Era Digital
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-8">
+                        Tantangan dan solusi terbaru dalam menjaga aset data bisnis Anda dari serangan siber yang kian
+                        kompleks.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="blog-security.html"
+                            class="inline-flex items-center text-sm font-bold text-gray-900 dark:text-white group/link">
+                            Baca Artikel <svg
+                                class="w-4 h-4 ml-2 transform group-hover/link:translate-x-2 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="group flex flex-col h-full bg-white dark:bg-slate-800/40 backdrop-blur-md border border-slate-200 dark:border-slate-700 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2">
+                <div class="relative h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        alt="Professional Web">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.2em] text-emerald-600 dark:text-emerald-400 uppercase mb-3">Branding</span>
+                    <h3
+                        class="text-xl font-extrabold mb-3 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        Website Profesional untuk Brand
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-8">
+                        Membangun kredibilitas melalui desain website yang menarik dan user experience yang optimal.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="blog-website.html"
+                            class="inline-flex items-center text-sm font-bold text-gray-900 dark:text-white group/link">
+                            Baca Artikel <svg
+                                class="w-4 h-4 ml-2 transform group-hover/link:translate-x-2 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="group flex flex-col h-full bg-white dark:bg-slate-800/40 backdrop-blur-md border border-slate-200 dark:border-slate-700 rounded-[2rem] overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 hover:-translate-y-2">
+                <div class="relative h-52 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        alt="Tech Trends">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <div class="p-8 flex flex-col flex-grow">
+                    <span
+                        class="text-[10px] font-bold tracking-[0.2em] text-purple-600 dark:text-purple-400 uppercase mb-3">Innovation</span>
+                    <h3
+                        class="text-xl font-extrabold mb-3 leading-tight group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                        Tren Teknologi 2025
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-8">
+                        Insight mengenai teknologi masa depan yang akan merevolusi cara industri beroperasi dan
+                        berkembang.
+                    </p>
+                    <div class="mt-auto">
+                        <a href="blog-trends.html"
+                            class="inline-flex items-center text-sm font-bold text-gray-900 dark:text-white group/link">
+                            Baca Artikel <svg
+                                class="w-4 h-4 ml-2 transform group-hover/link:translate-x-2 transition-transform"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
 
         </div>
     </section>
@@ -240,7 +403,7 @@
         </div>
     </footer>
 
-    <script src="assets/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
